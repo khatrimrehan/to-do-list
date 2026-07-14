@@ -1,0 +1,226 @@
+* {
+    border: none;
+    margin: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.071);
+    border: 0.7px solid rgba(120, 120, 120, 0.177);
+    gap: 16px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.para {
+    color: #7F8496;
+
+}
+
+.heading {
+    display: flex;
+    gap: 8px;
+    padding-top: 30px;
+    padding-bottom: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+input {
+    border: 0.7px solid rgba(120, 120, 120, 0.177);
+    padding-inline: 10px;
+    padding-block: 13.8px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 60%;
+    font-size: 15px;
+    color: #6B7589;
+    height: fit-content;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 15px;
+    padding-block: 9px;
+    border-radius: 5px;
+    max-width: 200px;
+    width: 30%;
+    background-color: #818BF8;
+    color: white;
+    gap: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.inpbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    
+}
+
+.plus {
+    font-size: 28px;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+.rounded{
+    scale: 1.6;
+    
+}
+.linee{
+    border: 0.8px solid rgba(120, 120, 120, 0.107);
+    width: 90%;
+    margin: 0 auto;
+}
+.subhead{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 600;
+}
+.jstsk{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 10px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    margin-bottom: 20px;
+}
+
+
+.jstsk::-webkit-scrollbar {
+    display: none;                 
+}
+
+#pent{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7F8496;
+}
+.tasks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.031);
+    border: 0.6px solid rgba(0, 0, 0, 0.114);
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    border-radius: 5px;
+    padding-inline: 20px;
+    padding-block: 10px;
+
+}
+.editndel , .radionname{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.name{
+    white-space: nowrap;
+    font-size: 16px;
+}
+.edt{
+    background-color: #e4ecfe9f;
+    padding: 10px;
+    border-radius: 17%;
+
+    & i{
+        font-size: 22px;
+        color:#4B86F8;
+    }
+}
+.del{
+    background-color: #FFEDEC;
+    padding: 10px;
+    border-radius: 17%;
+
+    & i{
+        font-size: 22px;
+        color:#FA675A;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+main{
+    width: 95%;
+    height: 90%;
+}
+.plus{
+    font-size: 23.5px;
+}
+.heading{
+    padding-bottom: 6px;
+
+}
+h1{
+    font-size: 25px;
+}
+.para{
+    font-size: 14px;
+}
+input{
+    width: 58%;
+}
+.inpbox{
+    gap: 4px;
+}
+.tasks{
+     padding-inline: 9px;
+    padding-block: 13px;
+}
+.edt , .del{
+    padding: 5px;
+    
+    & i{
+        font-size: 20px;
+    }
+}
+.rounded{
+    scale: 1.2;
+}
+.radionname{
+    gap: 6px;
+}
+#pent{
+    font-size: 13px;
+}
+}
